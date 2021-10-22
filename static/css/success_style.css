@@ -1,0 +1,44 @@
+body{
+    outline: solid black 1px;
+    width: 400px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-decoration: underline;
+    margin: 5px;
+}
+
+p{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div{
+    display: flex;
+}
+
+.context1{
+    margin-right: 100px;
+}
+
+.context2{
+    margin-right: 46px;
+}
+
+.context3{
+    margin-right: 18px;
+}
+
+.context4{
+    margin-right: 75px;
+}
+
+button{
+    margin-left: 330px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}

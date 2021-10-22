@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Dojo Survey" content="Assignment 3.">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/success_style.css') }}">
+</head>
+
+<body>
+    <h1>Submitted Info</h1>
+    <div>
+        <p>
+        <div class="context1" name = "name">Name:</div><label>{{name}}</label></p>
+    </div>
+    <div>
+        <p>
+        <div class="context2" name = "location">Dojo Location:</div><label>{{location}}</label></p>
+    </div>
+    <div>
+        <p>
+        <div class="context3" name = "language">Favorite Language:</div><label>{{language}}</label></p>
+    </div>
+    <div>
+        <p>
+        <div class="context4" name = "comment">Comment:</div><label>{{comment}}</label></p>
+    </div>
+    <div>
+        <form action='/refresh' method='post'>
+            <button type='submit'>Back</button>
+        </form>
+    </div>
+</body>
+
+</html>

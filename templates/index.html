@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Dojo Survey" content="Assignment 3.">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action='/process_form' method='post'>
+            <div class="writing">
+                <div class="section1">
+                    <label>Name:</label><input type='text' name='Your Name'>
+                </div>
+                <div class="section2">
+                    <label>Dojo Location:</label>
+                    <select name='Dojo Location' id='Dojo Location'>
+                        <option value=''>Please choose an option</option>
+                        <option value='North'>North</option>
+                        <option value='South'>South</option>
+                        <option value='East'>East</option>
+                        <option value='West'>West</option>
+                    </select>
+                </div>
+                <div class="section3">
+                    <label>Favorite Language:</label>
+                    <select name='Favorite Language' id='Favorite Language'>
+                        <option value=''>Please choose an option</option>
+                        <option value='Java'>Java</option>
+                        <option value='C++'>C++</option>
+                        <option value='Python'>Python</option>
+                        <option value='FORTRAN'>FORTRAN</option>
+                    </select>
+                </div>
+                <label>Comment (optional):</label>
+                <textarea name='comment' rows='10' cols='30'></textarea>
+                <button type='submit'>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
